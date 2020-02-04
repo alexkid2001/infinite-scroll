@@ -1,0 +1,47 @@
+.person-card {
+  width: 250px;
+  box-shadow: 0 2px 5px 0px rgba($light-color, .3);
+  align-self: stretch;
+
+  &:hover {
+    box-shadow: 0 2px 5px 2px rgba($light-color, .3);
+  }
+
+  &__wrap {
+    padding: 15px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+  }
+
+  &__name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__email, &__phone {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: $smDesktopWidth) {
+  }
+
+}
